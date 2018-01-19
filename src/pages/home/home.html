@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Multiple Image Picker
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="getPictures()">Get Pictures</button>
+    <div *ngFor="let image of images">
+      <img src="{{image}}"/>
+    </div>
+</ion-content>
